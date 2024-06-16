@@ -32,15 +32,30 @@
             padding: 20px;
             text-align: center;
             border-bottom: #77aaff 3px solid;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
         header h1 {
             margin: 0;
             font-size: 24px;
         }
-      
+        .biography-photo {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        .biography {
+            flex: 2;
+        }
+        .photo {
+            flex: 1;
+            text-align: center;
+        }
+        .photo img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
         .content {
             padding: 20px;
         }
@@ -81,17 +96,22 @@
     <div class="container">
         <header>
             <h1>Wang Li</h1>
-            
         </header>
 
         <div class="content">
-            <section id="biography">
-                <h2>Biography</h2>
-                <p><strong>PhD Candidate at School of Education, Zhejiang University</strong></p>
-                <p>Email: <a href="mailto:liwang.wendy@gmail.com">liwang.wendy@gmail.com</a></p>
-                <p>[Space for personal introduction]</p>
-            </section>
-            <img src="photo/wangli_photo.jpg" alt="Wang Li">
+            <div class="biography-photo">
+                <div class="biography">
+                    <section id="biography">
+                        <h2>Biography</h2>
+                        <p><strong>PhD Candidate at School of Education, Zhejiang University</strong></p>
+                        <p>Email: <a href="mailto:liwang.wendy@gmail.com">liwang.wendy@gmail.com</a></p>
+                        <p>[Space for personal introduction]</p>
+                    </section>
+                </div>
+                <div class="photo">
+                    <img src="photo/wangli_photo.jpg" alt="Wang Li">
+                </div>
+            </div>
 
             <section id="research">
                 <h2>Research Interests</h2>
