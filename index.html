@@ -29,8 +29,6 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         header {
-            background: #333;
-            color: #fff;
             padding: 20px;
             text-align: center;
             border-bottom: #77aaff 3px solid;
@@ -62,6 +60,7 @@
             margin: 0;
             padding: 0;
             list-style: none;
+            font-size: 14px; /* Increased font size */
         }
         .publication-item {
             margin-bottom: 15px;
@@ -81,31 +80,18 @@
             font-size: 0.9em;
             color: gray;
         }
-        .photo-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .photo-gallery img {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Wang Li</h1>
-            <img src="photo/wangli_photo.jpg" alt="Wang Li">
+            <img src="path_to_your_image.jpg" alt="Wang Li">
         </header>
 
         <div class="content">
-            <section id="about">
-                <h2>About Me</h2>
+            <section id="biography">
+                <h2>Biography</h2>
                 <p><strong>PhD Candidate at School of Education, Zhejiang University</strong></p>
                 <p>Email: <a href="mailto:liwang.wendy@gmail.com">liwang.wendy@gmail.com</a></p>
                 <p>[Space for personal introduction]</p>
@@ -189,13 +175,6 @@
             <section id="contact" class="contact">
                 <h2>Contact Me</h2>
                 <p>For further information or collaboration opportunities, please feel free to contact me via email at <a href="mailto:liwang.wendy@gmail.com">liwang.wendy@gmail.com</a>.</p>
-            </section>
-
-            <section id="photos" class="photo-gallery">
-                <h2>Photo Gallery</h2>
-                <img src="path_to_photo1.jpg" alt="Photo 1">
-                <img src="path_to_photo2.jpg" alt="Photo 2">
-                <img src="path_to_photo3.jpg" alt="Photo 3">
             </section>
 
             <div class="visitor-count">
