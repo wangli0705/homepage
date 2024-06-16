@@ -12,16 +12,16 @@
             padding: 0;
             box-sizing: border-box;
             font-family: Arial, sans-serif;
-            font-size: 14px; /* Adjusted font size */
+            font-size: 14px;
         }
         .container {
-            max-width: 1024px; /* Adjusted width */
+            max-width: 1024px;
             margin: 0 auto;
             padding: 20px;
         }
         .publication-list {
-            margin: 0 auto; 
-            max-width: 1024px; /* Adjusted width */
+            margin: 0 auto;
+            max-width: 1024px;
             padding: 20px;
         }
         .publication-item {
@@ -38,11 +38,11 @@
             color: gray;
         }
         .doi-link, .full-text, .citation {
-            color: blue; /* Link color */
-            text-decoration: underline; /* Underline links */
+            color: blue;
+            text-decoration: underline;
         }
         .doi-link:hover, .full-text:hover, .citation:hover {
-            color: darkblue; /* Hover color */
+            color: darkblue;
         }
     </style>
 </head>
@@ -103,12 +103,12 @@
             <a class="citation" href="path/to/citation">Citation</a>
         </div>
 
-        <h2>Conference paper & speaking</h2>
+        <h2>Conference Papers & Speaking Engagements</h2>
         <div class="publication-item">
             <strong>Wang, L.</strong>, Tan, C., & Li, Y. (2024). Exploring effectiveness of large language model feedback in supporting argumentative teaching for Singapore CSL students. The Doctoral Forum in Teaching Chinese as a Foreign Language 2024. Peking University, Beijing, China. (Speaking)
         </div>
         <div class="publication-item">
-            <strong>Wang, L.</strong>, Tan, C.L., & Li, Y. (2024). LLM-based Feedback Supporting Singapore CSL Students’ Argumentative Writing. Writing Instruction and Research for International Chinese Education, Institute for international Students, Nanjing University, China. (Speaking)
+            <strong>Wang, L.</strong>, Tan, C.L., & Li, Y. (2024). LLM-based Feedback Supporting Singapore CSL Students’ Argumentative Writing. Writing Instruction and Research for International Chinese Education, Institute for International Students, Nanjing University, China. (Speaking)
         </div>
         <div class="publication-item">
             <strong>Wang, L.</strong>, Tan, C., & Li, Y. (2023). Study on the effect of large language models on oral proficiency assessment and feedback in Singapore Chinese teaching. The 2nd International Doctoral Forum on Chinese Education. Zhejiang Normal University, Jinhua, China. (Presentation in Chinese)
@@ -135,15 +135,12 @@
     </div>
 
     <script>
-        // Function to update visitor count
         function updateVisitorCount() {
-            // Total visitor count
             let totalCount = localStorage.getItem('totalVisitorCount') || 0;
             totalCount++;
             localStorage.setItem('totalVisitorCount', totalCount);
             document.getElementById('total-visitor-count').textContent = totalCount;
 
-            // Today's visitor count
             let today = new Date().toLocaleDateString();
             let lastVisitDate = localStorage.getItem('lastVisitDate');
             let todayCount = localStorage.getItem('todayVisitorCount') || 0;
@@ -159,7 +156,6 @@
             document.getElementById('today-visitor-count').textContent = todayCount;
         }
 
-        // Update the visitor count on page load
         document.addEventListener('DOMContentLoaded', (event) => {
             updateVisitorCount();
         });
