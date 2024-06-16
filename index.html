@@ -28,15 +28,6 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        header {
-            padding: 20px;
-            text-align: center;
-            border-bottom: #77aaff 3px solid;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
         .biography-photo {
             display: flex;
             justify-content: space-between;
@@ -46,6 +37,11 @@
         .biography {
             flex: 2;
         }
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
         .photo {
             flex: 1;
             text-align: center;
@@ -53,7 +49,6 @@
         .photo img {
             width: 150px;
             height: auto;
-            border: 2px solid #fff;
         }
         .content {
             padding: 20px;
@@ -94,13 +89,10 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Wang Li</h1>
-        </header>
-
         <div class="content">
             <div class="biography-photo">
                 <div class="biography">
+                    <div class="name">Wang Li</div>
                     <section id="biography">
                         <h2>Biography</h2>
                         <p><strong>PhD Candidate at School of Education, Zhejiang University</strong></p>
@@ -109,7 +101,7 @@
                     </section>
                 </div>
                 <div class="photo">
-                    <img src="photo/wangli_photo.jpg" alt="Wang Li">
+                    <img src="path_to_your_image.jpg" alt="Wang Li">
                 </div>
             </div>
 
@@ -122,7 +114,7 @@
                 <h2>Publications</h2>
                 <ul class="publication-list">
                     <li class="publication-item">
-                        <strong>Wang, L.</strong>, Tan, C*., Shadiev, R., Tai, J., & Li, Y.* (2024). Large Language Model feedback to facilitate Singapore CSL students’ argumentative writing.  (In English) <strong>Under review</strong>
+                        <strong>Wang, L.</strong>, Tan, C*., Shadiev, R., Tai, J., & Li, Y.* (2024). Large Language Model feedback to facilitate Singapore CSL students’ argumentative writing. Computer Assisted Language Learning. (In English) <strong>Under review</strong>
                         <a class="full-text" href="path/to/fulltext">Full Text</a> |
                         <a class="citation" href="path/to/citation">Citation</a>
                     </li>
