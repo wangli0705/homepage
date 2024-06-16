@@ -33,6 +33,11 @@
         .year-section {
             margin-top: 20px;
         }
+        .visitor-count {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: gray;
+        }
     </style>
 </head>
 <body>
@@ -89,8 +94,28 @@
         </div>
         
         <div class="update-info">Last updated: June 16, 2024</div>
+        
         <h2>Contact Me</h2>
         <p>For further information or collaboration opportunities, please feel free to contact me via email at <a href="mailto:liwang.wendy@gmail.com">liwang.wendy@gmail.com</a>.</p>
+        
+        <div class="visitor-count">
+            Visitors: <span id="visitor-count">0</span>
+        </div>
     </div>
+
+    <script>
+        // Function to update visitor count
+        function updateVisitorCount() {
+            let count = localStorage.getItem('visitorCount') || 0;
+            count++;
+            localStorage.setItem('visitorCount', count);
+            document.getElementById('visitor-count').textContent = count;
+        }
+
+        // Update the visitor count on page load
+        document.addEventListener('DOMContentLoaded', (event) => {
+            updateVisitorCount();
+        });
+    </script>
 </body>
 </html>
