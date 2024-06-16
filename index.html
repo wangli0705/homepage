@@ -107,11 +107,13 @@
     <script>
         // Function to update visitor count
         function updateVisitorCount() {
+            // Total visitor count
             let totalCount = localStorage.getItem('totalVisitorCount') || 0;
             totalCount++;
             localStorage.setItem('totalVisitorCount', totalCount);
             document.getElementById('total-visitor-count').textContent = totalCount;
 
+            // Today's visitor count
             let today = new Date().toLocaleDateString();
             let lastVisitDate = localStorage.getItem('lastVisitDate');
             let todayCount = localStorage.getItem('todayVisitorCount') || 0;
