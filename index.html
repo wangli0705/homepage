@@ -8,131 +8,190 @@
     <meta name="keywords" content="Wang Li, Education Technology, Chinese Language, Teaching Chinese as a Foreign Language, Zhejiang University, PhD Candidate, Feedback, Large Language Models, Ministry of Education Singapore">
     <style>
         body {
-            margin: 20px;
-            padding: 0;
-            box-sizing: border-box;
             font-family: Arial, sans-serif;
             font-size: 12px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
         .container {
-            max-width: 1024px;
-            margin: 0 auto;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .current a {
+            color: #77aaff;
+        }
+        .container .content {
             padding: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
         }
         .publication-list {
-            margin: 0 auto;
-            max-width: 1024px;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
         }
         .publication-item {
-            margin-bottom: 10px;
-        }
-        .update-info {
-            margin-top: 20px;
-            font-size: 0.8em;
-            color: gray;
-        }
-        .visitor-count {
-            margin-top: 20px;
-            font-size: 0.8em;
-            color: gray;
+            margin-bottom: 15px;
         }
         .doi-link, .full-text, .citation {
-            color: blue;
+            color: #77aaff;
             text-decoration: underline;
         }
         .doi-link:hover, .full-text:hover, .citation:hover {
             color: darkblue;
         }
+        .contact {
+            margin-top: 20px;
+        }
+        .visitor-count {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: gray;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Wang Li</h1>
-        <p><strong>PhD Candidate at School of Education, Zhejiang University</strong></p>
-        <p>Email: <a href="mailto:liwang.wendy@gmail.com">liwang.wendy@gmail.com</a></p>
-        <img src="path_to_your_image.jpg" alt="Wang Li" style="width: 200px; height: auto;">
+    <header>
+        <div class="container">
+            <h1>Wang Li</h1>
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
 
-        <h2>About Me</h2>
-        <p>[Space for personal introduction]</p>
+    <div class="container content">
+        <section id="about">
+            <h2>About Me</h2>
+            <p><strong>PhD Candidate at School of Education, Zhejiang University</strong></p>
+            <p>Email: <a href="mailto:liwang.wendy@gmail.com">liwang.wendy@gmail.com</a></p>
+            <img src="path_to_your_image.jpg" alt="Wang Li" style="width: 200px; height: auto;">
+            <p>[Space for personal introduction]</p>
+        </section>
 
-        <h2>Research Interests</h2>
-        <p>[Space for detailed research interests]</p>
-    </div>
+        <section id="research">
+            <h2>Research Interests</h2>
+            <p>[Space for detailed research interests]</p>
+        </section>
 
-    <div class="publication-list">
-        <h2>Journal Articles</h2>
-        <div class="publication-item">
-            <strong>Wang, L.</strong>, Tan, C*., Shadiev, R., Tai, J., & Li, Y.* (2024). Large Language Model feedback to facilitate Singapore CSL students’ argumentative writing. Computer Assisted Language Learning. (In English) <strong>Under review</strong>
-            <a class="full-text" href="path/to/fulltext">Full Text</a> |
-            <a class="citation" href="path/to/citation">Citation</a>
-        </div>
-        <div class="publication-item">
-            <strong>Wang, L.</strong>, Tan, C., Li, Y., & Tai, J. (2024). Can large language model provide scoring and feedback on Singapore secondary students’ Chinese speech? A case study. Journal of Chinese Language Education. (In Chinese)
-            <a class="full-text" href="path/to/fulltext">Full Text</a> |
-            <a class="citation" href="path/to/citation">Citation</a>
-        </div>
-        <div class="publication-item">
-            <strong>Wang, L.</strong>, Tan, C., Li, Y., & Tai, J. (2024). The impact of Large Language Model Feedback on Singapore CSL Argumentation Teaching. Chinese Teaching and Research. (In Chinese)
-            <a class="full-text" href="path/to/fulltext">Full Text</a> |
-            <a class="citation" href="path/to/citation">Citation</a>
-        </div>
-        <div class="publication-item">
-            <strong>Wang, L.</strong>, Chen, X., Wang, C., Xu, L., Shadiev, R., & Li, Y. (2023). ChatGPT's capabilities in providing feedback on undergraduate students’ argumentation: a case study. Thinking Skills and Creativity. <a class="doi-link" href="https://doi.org/10.1016/j.tsc.2023.101440">Read more</a> (In English)
-            <a class="full-text" href="path/to/fulltext">Full Text</a> |
-            <a class="citation" href="path/to/citation">Citation</a>
-        </div>
-        <div class="publication-item">
-            <strong>Wang, L.</strong>, Li, Y., Chen, X., & Xu, L. (2023). Evaluation and feedback on students’ argumentation supported by ChatGPT: An empirical comparison based on two prompt designs. Modern Distance Education Research, 2023, 35(04), 83-91. (In Chinese)
-            <a class="full-text" href="path/to/fulltext">Full Text</a> |
-            <a class="citation" href="path/to/citation">Citation</a>
-        </div>
-        <div class="publication-item">
-            <strong>Wang, L.</strong>, Li, Y. (2023). Exploring Singapore K-12 students’ learning experience about “Home-Based Learning days” and the influential factors. Journal of Beijing Institute of Education, 2023, 37(04), 83-92. (In Chinese)
-            <a class="full-text" href="path/to/fulltext">Full Text</a> |
-            <a class="citation" href="path/to/citation">Citation</a>
-        </div>
-        <div class="publication-item">
-            Li, Y., <strong>Wang, L.</strong>, Shen, X., & Xu, L. (2022). Study on the influence of artificial intelligence education-related extra-curricular experience in high schools on students' career choices. Modern Distance Education Research, 2023, 35(01), 75-84. (In Chinese)
-            <a class="full-text" href="path/to/fulltext">Full Text</a> |
-            <a class="citation" href="path/to/citation">Citation</a>
-        </div>
-        <div class="publication-item">
-            Chen, X., <strong>Wang, L.</strong>, Zhai, X., & Li, Y.* (2022). Exploring the effects of argument map (AM)-supported online group debate activities on college students' critical thinking. Frontiers in Psychology, 13: 856462. (In English)
-            <a class="full-text" href="path/to/fulltext">Full Text</a> |
-            <a class="citation" href="path/to/citation">Citation</a>
-        </div>
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul class="publication-list">
+                <li class="publication-item">
+                    <strong>Wang, L.</strong>, Tan, C*., Shadiev, R., Tai, J., & Li, Y.* (2024). Large Language Model feedback to facilitate Singapore CSL students’ argumentative writing. Computer Assisted Language Learning. (In English) <strong>Under review</strong>
+                    <a class="full-text" href="path/to/fulltext">Full Text</a> |
+                    <a class="citation" href="path/to/citation">Citation</a>
+                </li>
+                <li class="publication-item">
+                    <strong>Wang, L.</strong>, Tan, C., Li, Y., & Tai, J. (2024). Can large language model provide scoring and feedback on Singapore secondary students’ Chinese speech? A case study. Journal of Chinese Language Education. (In Chinese)
+                    <a class="full-text" href="path/to/fulltext">Full Text</a> |
+                    <a class="citation" href="path/to/citation">Citation</a>
+                </li>
+                <li class="publication-item">
+                    <strong>Wang, L.</strong>, Tan, C., Li, Y., & Tai, J. (2024). The impact of Large Language Model Feedback on Singapore CSL Argumentation Teaching. Chinese Teaching and Research. (In Chinese)
+                    <a class="full-text" href="path/to/fulltext">Full Text</a> |
+                    <a class="citation" href="path/to/citation">Citation</a>
+                </li>
+                <li class="publication-item">
+                    <strong>Wang, L.</strong>, Chen, X., Wang, C., Xu, L., Shadiev, R., & Li, Y. (2023). ChatGPT's capabilities in providing feedback on undergraduate students’ argumentation: a case study. Thinking Skills and Creativity. <a class="doi-link" href="https://doi.org/10.1016/j.tsc.2023.101440">Read more</a> (In English)
+                    <a class="full-text" href="path/to/fulltext">Full Text</a> |
+                    <a class="citation" href="path/to/citation">Citation</a>
+                </li>
+                <li class="publication-item">
+                    <strong>Wang, L.</strong>, Li, Y., Chen, X., & Xu, L. (2023). Evaluation and feedback on students’ argumentation supported by ChatGPT: An empirical comparison based on two prompt designs. Modern Distance Education Research, 2023, 35(04), 83-91. (In Chinese)
+                    <a class="full-text" href="path/to/fulltext">Full Text</a> |
+                    <a class="citation" href="path/to/citation">Citation</a>
+                </li>
+                <li class="publication-item">
+                    <strong>Wang, L.</strong>, Li, Y. (2023). Exploring Singapore K-12 students’ learning experience about “Home-Based Learning days” and the influential factors. Journal of Beijing Institute of Education, 2023, 37(04), 83-92. (In Chinese)
+                    <a class="full-text" href="path/to/fulltext">Full Text</a> |
+                    <a class="citation" href="path/to/citation">Citation</a>
+                </li>
+                <li class="publication-item">
+                    Li, Y., <strong>Wang, L.</strong>, Shen, X., & Xu, L. (2022). Study on the influence of artificial intelligence education-related extra-curricular experience in high schools on students' career choices. Modern Distance Education Research, 2023, 35(01), 75-84. (In Chinese)
+                    <a class="full-text" href="path/to/fulltext">Full Text</a> |
+                    <a class="citation" href="path/to/citation">Citation</a>
+                </li>
+                <li class="publication-item">
+                    Chen, X., <strong>Wang, L.</strong>, Zhai, X., & Li, Y.* (2022). Exploring the effects of argument map (AM)-supported online group debate activities on college students' critical thinking. Frontiers in Psychology, 13: 856462. (In English)
+                    <a class="full-text" href="path/to/fulltext">Full Text</a> |
+                    <a class="citation" href="path/to/citation">Citation</a>
+                </li>
+            </ul>
+        </section>
 
-        <h2>Conference Papers & Speaking Engagements</h2>
-        <div class="publication-item">
-            <strong>Wang, L.</strong>, Tan, C., & Li, Y. (2024). Exploring effectiveness of large language model feedback in supporting argumentative teaching for Singapore CSL students. The Doctoral Forum in Teaching Chinese as a Foreign Language 2024. Peking University, Beijing, China. (Speaking)
-        </div>
-        <div class="publication-item">
-            <strong>Wang, L.</strong>, Tan, C.L., & Li, Y. (2024). LLM-based Feedback Supporting Singapore CSL Students’ Argumentative Writing. Writing Instruction and Research for International Chinese Education, Institute for International Students, Nanjing University, China. (Speaking)
-        </div>
-        <div class="publication-item">
-            <strong>Wang, L.</strong>, Tan, C., & Li, Y. (2023). Study on the effect of large language models on oral proficiency assessment and feedback in Singapore Chinese teaching. The 2nd International Doctoral Forum on Chinese Education. Zhejiang Normal University, Jinhua, China. (Presentation in Chinese)
-        </div>
-        <div class="publication-item">
-            <strong>Wang, L.</strong>, Li, Y.* (2023). Research on human-machine collaborative feedback based on generative artificial intelligence. 2023 Annual Conference of China Association for Educational Technology. Zhejiang University, Hangzhou, China. (Presentation in Chinese)
-        </div>
-        <div class="publication-item">
-            <strong>Wang, L.</strong>, Li, Y.* (2022). The interpretation of online merge offline teaching mode based on “student learning space” in Singapore. 2022 Annual Conference of China Association for Educational Technology, Tianjing Normal University, Tianjing, China. (Presentation in Chinese)
-        </div>
-        <div class="publication-item">
-            <strong>Wang, L.</strong>, Li, Y.* (2022). The influence of artificial intelligence-related curricular on students' major and career choice-based on interviews with 11 teachers and students. 2022 The Association for Educational Communications and Technology international convention, USA. (Presentation in English)
-        </div>
-        
-        <div class="update-info">Last updated: June 16, 2024</div>
-        
-        <h2>Contact Me</h2>
-        <p>For further information or collaboration opportunities, please feel free to contact me via email at <a href="mailto:liwang.wendy@gmail.com">liwang.wendy@gmail.com</a>.</p>
-        
+        <section id="conference">
+            <h2>Conference Papers & Speaking Engagements</h2>
+            <ul class="publication-list">
+                <li class="publication-item">
+                    <strong>Wang, L.</strong>, Tan, C., & Li, Y. (2024). Exploring effectiveness of large language model feedback in supporting argumentative teaching for Singapore CSL students. The Doctoral Forum in Teaching Chinese as a Foreign Language 2024. Peking University, Beijing, China. (Speaking)
+                </li>
+                <li class="publication-item">
+                    <strong>Wang, L.</strong>, Tan, C.L., & Li, Y. (2024). LLM-based Feedback Supporting Singapore CSL Students’ Argumentative Writing. Writing Instruction and Research for International Chinese Education, Institute for International Students, Nanjing University, China. (Speaking)
+                </li>
+                <li class="publication-item">
+                    <strong>Wang, L.</strong>, Tan, C., & Li, Y. (2023). Study on the effect of large language models on oral proficiency assessment and feedback in Singapore Chinese teaching. The 2nd International Doctoral Forum on Chinese Education. Zhejiang Normal University, Jinhua, China. (Presentation in Chinese)
+                </li>
+                <li class="publication-item">
+                    <strong>Wang, L.</strong>, Li, Y.* (2023). Research on human-machine collaborative feedback based on generative artificial intelligence. 2023 Annual Conference of China Association for Educational Technology. Zhejiang University, Hangzhou, China. (Presentation in Chinese)
+                </li>
+                <li class="publication-item">
+                    <strong>Wang, L.</strong>, Li, Y.* (2022). The interpretation of online merge offline teaching mode based on “student learning space” in Singapore. 2022 Annual Conference of China Association for Educational Technology, Tianjing Normal University, Tianjing, China. (Presentation in Chinese)
+                </li>
+                <li class="publication-item">
+                    <strong>Wang, L.</strong>, Li, Y.* (2022). The influence of artificial intelligence-related curricular on students' major and career choice-based on interviews with 11 teachers and students. 2022 The Association for Educational Communications and Technology international convention, USA. (Presentation in English)
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>For further information or collaboration opportunities, please feel free to contact me via email at <a href="mailto:liwang.wendy@gmail.com">liwang.wendy@gmail.com</a>.</p>
+        </section>
+
         <div class="visitor-count">
             Total Visitors: <span id="total-visitor-count">0</span><br>
             Today's Visitors: <span id="today-visitor-count">0</span>
         </div>
     </div>
+
+    <footer>
+        <p>Last updated: June 16, 2024</p>
+    </footer>
 
     <script>
         function updateVisitorCount() {
