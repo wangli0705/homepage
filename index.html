@@ -31,28 +31,22 @@
         header {
             background: #333;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
+            padding: 20px;
+            text-align: center;
             border-bottom: #77aaff 3px solid;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
+        header h1 {
+            margin: 0;
+            font-size: 24px;
         }
-        header ul {
-            padding: 0;
-            list-style: none;
-            text-align: center;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px;
-        }
-        .current a {
-            color: #77aaff;
+        header img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            border: 2px solid #fff;
         }
         .content {
             padding: 20px;
@@ -106,13 +100,7 @@
     <div class="container">
         <header>
             <h1>Wang Li</h1>
-            <ul>
-                <li class="current"><a href="#">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <img src="path_to_your_image.jpg" alt="Wang Li">
         </header>
 
         <div class="content">
@@ -120,7 +108,6 @@
                 <h2>About Me</h2>
                 <p><strong>PhD Candidate at School of Education, Zhejiang University</strong></p>
                 <p>Email: <a href="mailto:liwang.wendy@gmail.com">liwang.wendy@gmail.com</a></p>
-                <img src="photo/wangli_photo.jpg" alt="Wang Li" style="width: 200px; height: auto;">
                 <p>[Space for personal introduction]</p>
             </section>
 
